@@ -4,6 +4,7 @@ import csv
 import sys
 import subprocess
 import tempfile
+import shutil
 
 # variables
 root = os.path.dirname(os.path.abspath(__file__))
@@ -76,3 +77,5 @@ with open(output_file, "w") as f:
     writer.writerow(["tolc_activity"])  # header
     for o in outputs:
         writer.writerow([o])
+
+shutil.rmtree(tmp_dir)
