@@ -2,6 +2,7 @@
 
 The GNEProp model was trained based on a high-throughput screening effort against a sensitized Escherichia coli strain. The model was able to identify new antibiotic candidates in a billion-scale screening effort. small-molecule high-throughput screening with a deep-learning-based virtual screening approach to uncover new antibacterial compounds. Robustness of the model was validated with respect to out-of-distribution generalization and activity cliff prediction.
 
+This model was incorporated on 2025-12-10.
 
 
 ## Information
@@ -34,8 +35,11 @@ Below are the **Output Columns** of the model:
 ### Source and Deployment
 - **Source:** `Local`
 - **Source Type:** `External`
+- **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos5nqn.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos5nqn.zip)
 
 ### Resource Consumption
+- **Model Size (Mb):** `2576`
+- **Environment Size (Mb):** `8426`
 
 
 ### References
