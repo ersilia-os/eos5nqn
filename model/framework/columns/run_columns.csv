@@ -1,1 +1,2 @@
 name,type,direction,description
+tolc_activity,float,high,Probability score of inhibiting the Escherichia coli tolC strain
