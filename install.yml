@@ -1,10 +1,11 @@
 python: "3.11"
 commands:
     - ["pip", "git+https://github.com/bp-kelley/descriptastorus@2.7.0"]
+    - ["pip", "torch", "2.8.0+cpu","--extra-index-url https://download.pytorch.org/whl/cpu"]
+    - ["pip", "torchdata", "0.7.1"]
     - ["pip", "joblib", "1.5.2"]
     - ["pip", "pytorch-lightning", "1.9.5"]
     - ["pip", "torch_geometric", "2.7.0"]
     - ["pip", "dgllife", "0.3.2"]
-    - ["pip", "torchdata", "0.7.1"]
     - ["pip", "pydantic", "2.12.5"]
     - ["conda", "dgl", "2.4.0", "dglteam/label/th21_cpu"]
