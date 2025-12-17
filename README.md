@@ -2,7 +2,7 @@
 
 The GNEProp model was trained based on a high-throughput screening effort against a sensitized Escherichia coli strain. The model was able to identify new antibiotic candidates in a billion-scale screening effort. small-molecule high-throughput screening with a deep-learning-based virtual screening approach to uncover new antibacterial compounds. Robustness of the model was validated with respect to out-of-distribution generalization and activity cliff prediction.
 
-This model was incorporated on 2025-12-10.Last packaged on 2025-12-11.
+This model was incorporated on 2025-12-10.Last packaged on 2025-12-17.
 
 ## Information
 ### Identifiers
@@ -42,12 +42,12 @@ Below are the **Output Columns** of the model:
 ### Resource Consumption
 - **Model Size (Mb):** `3887`
 - **Environment Size (Mb):** `2472`
-- **Image Size (Mb):** `3169.52`
+- **Image Size (Mb):** `4473.95`
 
 **Computational Performance (seconds):**
-- 10 inputs: `32.73`
-- 100 inputs: `24.65`
-- 10000 inputs: `420.96`
+- 10 inputs: `39.92`
+- 100 inputs: `71.17`
+- 10000 inputs: `-1`
 
 ### References
 - **Source Code**: [https://github.com/Genentech/gneprop](https://github.com/Genentech/gneprop)
