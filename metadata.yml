@@ -20,7 +20,7 @@ Input:
 Input Dimension: 1
 Output:
   - Score
-Output Dimension: 1
+Output Dimension: 2
 Output Consistency: Fixed
 Interpretation: Probability of inhibiting a sensitized strain of Escherichia 
   coli.

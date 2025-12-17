@@ -1,2 +1,3 @@
 name,type,direction,description
-tolc_activity,float,high,Probability score of inhibiting the Escherichia coli tolC strain
+tolc_activity,float,high,Probability score of inhibiting the Escherichia coli tolC strain using a subset of the HTS screen
+hts_activity,float,high,Probability score of inhibiting the Escherichia coli tolC strain using a large HTS screen
