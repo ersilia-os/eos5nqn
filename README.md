@@ -21,14 +21,15 @@ This model was incorporated on 2025-12-10.Last packaged on 2025-12-11.
 - **Input Dimension:** `1`
 
 ### Output
-- **Output Dimension:** `1`
+- **Output Dimension:** `2`
 - **Output Consistency:** `Fixed`
 - **Interpretation:** Probability of inhibiting a sensitized strain of Escherichia coli.
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
 |------|------|-----------|-------------|
-| tolc_activity | float | high | Probability score of inhibiting the Escherichia coli tolC strain |
+| tolc_activity | float | high | Probability score of inhibiting the Escherichia coli tolC strain using a subset of the HTS screen |
+| hts_activity | float | high | Probability score of inhibiting the Escherichia coli tolC strain using a large HTS screen |
 
 
 ### Source and Deployment
