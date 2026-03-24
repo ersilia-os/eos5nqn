@@ -71,11 +71,11 @@ if os.path.exists(tmp_output):
                 try:
                     outputs_tolc.append(float(r[1]))
                 except (IndexError, ValueError):
-                    outputs_tolc.append("")
+                    outputs_tolc.append(float('nan'))
     except Exception:
         pass
 while len(outputs_tolc) < len(smiles_list):
-    outputs_tolc.append("")
+    outputs_tolc.append(float('nan'))
 outputs_tolc = outputs_tolc[:len(smiles_list)]
 
 # Run GNEprop trained on the full HTS dataset
@@ -115,11 +115,11 @@ if os.path.exists(tmp_output_hts):
                 try:
                     outputs_hts.append(float(r[1]))
                 except (IndexError, ValueError):
-                    outputs_hts.append("")
+                    outputs_hts.append(float('nan'))
     except Exception:
         pass
 while len(outputs_hts) < len(smiles_list):
-    outputs_hts.append("")
+    outputs_hts.append(float('nan'))
 outputs_hts = outputs_hts[:len(smiles_list)]
 
 # check input and output have the same lenght
