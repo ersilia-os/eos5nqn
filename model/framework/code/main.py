@@ -62,21 +62,11 @@ if stderr:
 
 # collect output TolC
 outputs_tolc = []
-if os.path.exists(tmp_output):
-    try:
-        with open(tmp_output, "r") as f:
-            reader = csv.reader(f)
-            next(reader)
-            for r in reader:
-                try:
-                    outputs_tolc.append(float(r[1]))
-                except (IndexError, ValueError):
-                    outputs_tolc.append(float('nan'))
-    except Exception:
-        pass
-while len(outputs_tolc) < len(smiles_list):
-    outputs_tolc.append(float('nan'))
-outputs_tolc = outputs_tolc[:len(smiles_list)]
+with open(tmp_output, "r") as f:
+    reader = csv.reader(f)
+    next(reader)
+    for r in reader:
+        outputs_tolc += [float(r[1])]
 
 # Run GNEprop trained on the full HTS dataset
 tmp_bash_hts = os.path.join(tmp_dir, "runner.sh")
@@ -106,21 +96,11 @@ if stderr:
 
 # collect output HTS
 outputs_hts = []
-if os.path.exists(tmp_output_hts):
-    try:
-        with open(tmp_output_hts, "r") as f:
-            reader = csv.reader(f)
-            next(reader)
-            for r in reader:
-                try:
-                    outputs_hts.append(float(r[1]))
-                except (IndexError, ValueError):
-                    outputs_hts.append(float('nan'))
-    except Exception:
-        pass
-while len(outputs_hts) < len(smiles_list):
-    outputs_hts.append(float('nan'))
-outputs_hts = outputs_hts[:len(smiles_list)]
+with open(tmp_output_hts, "r") as f:
+    reader = csv.reader(f)
+    next(reader)
+    for r in reader:
+        outputs_hts += [float(r[1])]
 
 # check input and output have the same lenght
 input_len = len(smiles_list)
