@@ -51,7 +51,7 @@ Below are the **Output Columns** of the model:
 
 ### References
 - **Source Code**: [https://github.com/Genentech/gneprop](https://github.com/Genentech/gneprop)
-- **Publication**: [https://www.nature.com/articles/s41587-025-02814-6](https://www.nature.com/articles/s41587-025-02814-6)
+- **Publication**: [https://doi.org/10.1101/2024.09.11.612340](https://doi.org/10.1101/2024.09.11.612340)
 - **Publication Type:** `Peer reviewed`
 - **Publication Year:** `2025`
 - **Ersilia Contributor:** [miquelduranfrigola](https://github.com/miquelduranfrigola)
