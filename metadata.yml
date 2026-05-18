@@ -1,6 +1,6 @@
 Identifier: eos5nqn
 Slug: gneprop-ecoli
-Status: Ready
+Status: In maintenance
 Title: GNEProp Escherichia coli antibiotic activity
 Description: The GNEProp model was trained based on a high-throughput screening 
   effort against a sensitized Escherichia coli strain. The model was able to 
