@@ -30,7 +30,7 @@ class GNEprop(torch.nn.Module):
 
     @staticmethod
     def load_from_checkpoint(path):
-        ckpt = torch.load(path, map_location="cpu")
+        ckpt = torch.load(path, map_location="cpu", weights_only=False)
         model = GNEprop(**ckpt["hyper_parameters"])
         model.load_state_dict(ckpt["state_dict"])
         model.eval()
