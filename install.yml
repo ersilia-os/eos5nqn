@@ -1,5 +1,6 @@
 python: "3.11"
 commands:
+    - ["pip", "setuptools", "70.3.0"]
     - ["pip", "git+https://github.com/bp-kelley/descriptastorus@2.7.0"]
     - ["pip", "torch", "2.8.0+cpu","--extra-index-url https://download.pytorch.org/whl/cpu"]
     - ["pip", "torchdata", "0.7.1"]
