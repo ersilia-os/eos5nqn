@@ -2,13 +2,7 @@ Identifier: eos5nqn
 Slug: gneprop-ecoli
 Status: Ready
 Title: GNEProp Escherichia coli antibiotic activity
-Description: The GNEProp model was trained based on a high-throughput screening 
-  effort against a sensitized Escherichia coli strain. The model was able to 
-  identify new antibiotic candidates in a billion-scale screening effort. 
-  small-molecule high-throughput screening with a deep-learning-based virtual 
-  screening approach to uncover new antibacterial compounds. Robustness of the 
-  model was validated with respect to out-of-distribution generalization and 
-  activity cliff prediction.
+Description: Assesses antibacterial activity against Escherichia coli, including a permeability-compromised strain alongside the wild type so that intrinsic potency can be separated from failure to penetrate. Scalia and colleagues at Genentech coupled a high-throughput phenotypic screen with deep learning applied at ultra-large scale, searching well beyond the screened set and surfacing scaffolds structurally unlike known antibacterials. Predictions rest on growth inhibition and carry no information about mechanism of action.
 Deployment:
   - Local
 Source: Local
@@ -22,19 +16,18 @@ Output:
   - Score
 Output Dimension: 2
 Output Consistency: Fixed
-Interpretation: Probability of inhibiting a sensitized strain of Escherichia 
-  coli.
+Interpretation: Probability of Escherichia coli growth inhibition in wild-type and permeability-compromised strains.
 Tag:
   - Antimicrobial activity
 Biomedical Area:
   - Antimicrobial resistance
 Target Organism:
   - Escherichia coli
-Publication Type: Peer reviewed
-Publication Year: 2025
+Publication Type: Preprint
+Publication Year: 2024
 Publication: https://doi.org/10.1101/2024.09.11.612340
 Source Code: https://github.com/Genentech/gneprop
-License: GPL-3.0-or-later
+License: Apache-2.0
 Contributor: miquelduranfrigola
 Incorporation Date: '2025-12-10'
 Last Packaging Date: '2026-05-20'
@@ -50,4 +43,3 @@ Computational Performance 2: 36.19
 Computational Performance 3: 73.95
 Computational Performance 4: 550.45
 Computational Performance 5: -1.0
-Status: Ready

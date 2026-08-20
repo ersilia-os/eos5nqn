@@ -1,6 +1,6 @@
 # GNEProp Escherichia coli antibiotic activity
 
-The GNEProp model was trained based on a high-throughput screening effort against a sensitized Escherichia coli strain. The model was able to identify new antibiotic candidates in a billion-scale screening effort. small-molecule high-throughput screening with a deep-learning-based virtual screening approach to uncover new antibacterial compounds. Robustness of the model was validated with respect to out-of-distribution generalization and activity cliff prediction.
+Assesses antibacterial activity against Escherichia coli, including a permeability-compromised strain alongside the wild type so that intrinsic potency can be separated from failure to penetrate. Scalia and colleagues at Genentech coupled a high-throughput phenotypic screen with deep learning applied at ultra-large scale, searching well beyond the screened set and surfacing scaffolds structurally unlike known antibacterials. Predictions rest on growth inhibition and carry no information about mechanism of action.
 
 This model was incorporated on 2025-12-10.Last packaged on 2026-05-20.
 
@@ -23,7 +23,7 @@ This model was incorporated on 2025-12-10.Last packaged on 2026-05-20.
 ### Output
 - **Output Dimension:** `2`
 - **Output Consistency:** `Fixed`
-- **Interpretation:** Probability of inhibiting a sensitized strain of Escherichia coli.
+- **Interpretation:** Probability of Escherichia coli growth inhibition in wild-type and permeability-compromised strains.
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
@@ -52,12 +52,12 @@ Below are the **Output Columns** of the model:
 ### References
 - **Source Code**: [https://github.com/Genentech/gneprop](https://github.com/Genentech/gneprop)
 - **Publication**: [https://doi.org/10.1101/2024.09.11.612340](https://doi.org/10.1101/2024.09.11.612340)
-- **Publication Type:** `Peer reviewed`
-- **Publication Year:** `2025`
+- **Publication Type:** `Preprint`
+- **Publication Year:** `2024`
 - **Ersilia Contributor:** [miquelduranfrigola](https://github.com/miquelduranfrigola)
 
 ### License
-This package is licensed under a [GPL-3.0](https://github.com/ersilia-os/ersilia/blob/master/LICENSE) license. The model contained within this package is licensed under a [GPL-3.0-or-later](LICENSE) license.
+This package is licensed under a [GPL-3.0](https://github.com/ersilia-os/ersilia/blob/master/LICENSE) license. The model contained within this package is licensed under a [Apache-2.0](LICENSE) license.
 
 **Notice**: Ersilia grants access to models _as is_, directly from the original authors, please refer to the original code repository and/or publication if you use the model in your research.
 
