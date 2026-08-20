@@ -1,6 +1,6 @@
 # GNEProp Escherichia coli antibiotic activity
 
-Assesses antibacterial activity against Escherichia coli, including a permeability-compromised strain alongside the wild type so that intrinsic potency can be separated from failure to penetrate. Scalia and colleagues at Genentech coupled a high-throughput phenotypic screen with deep learning applied at ultra-large scale, searching well beyond the screened set and surfacing scaffolds structurally unlike known antibacterials. Predictions rest on growth inhibition and carry no information about mechanism of action.
+The GNEProp model was trained based on a high-throughput screening effort against a sensitized Escherichia coli strain. The model was able to identify new antibiotic candidates in a billion-scale screening effort. small-molecule high-throughput screening with a deep-learning-based virtual screening approach to uncover new antibacterial compounds. Robustness of the model was validated with respect to out-of-distribution generalization and activity cliff prediction.
 
 This model was incorporated on 2025-12-10.Last packaged on 2026-05-20.
 
@@ -23,7 +23,7 @@ This model was incorporated on 2025-12-10.Last packaged on 2026-05-20.
 ### Output
 - **Output Dimension:** `2`
 - **Output Consistency:** `Fixed`
-- **Interpretation:** Probability of Escherichia coli growth inhibition in wild-type and permeability-compromised strains.
+- **Interpretation:** Probability of inhibiting a sensitized strain of Escherichia coli.
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
