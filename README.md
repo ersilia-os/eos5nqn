@@ -1,6 +1,6 @@
 # GNEProp Escherichia coli antibiotic activity
 
-Assesses antibacterial activity against Escherichia coli, including a permeability-compromised strain alongside the wild type so that intrinsic potency can be separated from failure to penetrate. Scalia and colleagues at Genentech coupled a high-throughput phenotypic screen with deep learning applied at ultra-large scale, searching well beyond the screened set and surfacing scaffolds structurally unlike known antibacterials. Predictions rest on growth inhibition and carry no information about mechanism of action.
+Assesses antibacterial activity against an efflux-deficient tolC strain of Escherichia coli, sensitised so that potency is not masked by failure to accumulate. Scalia and colleagues at Genentech screened nearly two million compounds at 5 micromolar and trained GNEprop, a graph neural network pre-trained by contrastive learning and hardened against out-of-distribution shift and activity cliffs. Virtual screening of 1.4 billion compounds returned 82 confirmed actives, a 90-fold hit-rate gain. Two released checkpoints are served, one on the public GNEtolC subset and one on the full screen.
 
 This model was incorporated on 2025-12-10.Last packaged on 2026-05-20.
 
@@ -23,7 +23,7 @@ This model was incorporated on 2025-12-10.Last packaged on 2026-05-20.
 ### Output
 - **Output Dimension:** `2`
 - **Output Consistency:** `Fixed`
-- **Interpretation:** Probability of Escherichia coli growth inhibition in wild-type and permeability-compromised strains.
+- **Interpretation:** Probability of efflux-deficient Escherichia coli growth inhibition at 5 micromolar, from subset-trained and full-screen models.
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
