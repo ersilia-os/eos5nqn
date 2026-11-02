@@ -1,6 +1,6 @@
 Identifier: eos5nqn
 Slug: gneprop-ecoli
-Status: Ready
+Status: In maintenance
 Title: GNEProp Escherichia coli antibiotic activity
 Description: Assesses antibacterial activity against an efflux-deficient tolC strain
   of Escherichia coli, sensitised so that potency is not masked by failure to accumulate.
