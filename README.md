@@ -2,7 +2,8 @@
 
 Assesses antibacterial activity against an efflux-deficient tolC strain of Escherichia coli, sensitised so that potency is not masked by failure to accumulate. Scalia and colleagues at Genentech screened nearly two million compounds at 5 micromolar and trained GNEprop, a graph neural network pre-trained by contrastive learning and hardened against out-of-distribution shift and activity cliffs. Virtual screening of 1.4 billion compounds returned 82 confirmed actives, a 90-fold hit-rate gain. Two released checkpoints are served, one on the public GNEtolC subset and one on the full screen.
 
-This model was incorporated on 2025-12-10.Last packaged on 2026-05-20.
+This model was incorporated on 2025-12-10.
+Last packaged on 2026-05-20.
 
 ## Information
 ### Identifiers
