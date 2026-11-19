@@ -1,6 +1,6 @@
 Identifier: eos5nqn
 Slug: gneprop-ecoli
-Status: In maintenance
+Status: Ready
 Title: GNEProp Escherichia coli antibiotic activity
 Description: Assesses antibacterial activity against an efflux-deficient tolC 
   strain of Escherichia coli, sensitised so that potency is not masked by 
@@ -38,16 +38,16 @@ Source Code: https://github.com/Genentech/gneprop
 License: Apache-2.0
 Contributor: miquelduranfrigola
 Incorporation Date: '2025-12-10'
-Last Packaging Date: '2026-05-20'
+Last Packaging Date: '2026-11-19'
 Release: v2.0.0
 S3: https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos5nqn.zip
 DockerHub: https://hub.docker.com/r/ersiliaos/eos5nqn
 Docker Architecture: AMD64
 Model Size: 2599.0
 Environment Size: 2430.0
-Image Size: 4478.84
-Computational Performance 1: 39.55
-Computational Performance 2: 36.19
-Computational Performance 3: 73.95
-Computational Performance 4: 550.45
+Image Size: 2984.48
+Computational Performance 1: 36.33
+Computational Performance 2: 26.46
+Computational Performance 3: 53.68
+Computational Performance 4: 401.19
 Computational Performance 5: -1.0
