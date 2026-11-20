@@ -39,7 +39,7 @@ License: Apache-2.0
 Contributor: miquelduranfrigola
 Incorporation Date: '2025-12-10'
 Last Packaging Date: '2026-11-19'
-Release: v2.0.0
+Release: v2.1.0
 S3: https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos5nqn.zip
 DockerHub: https://hub.docker.com/r/ersiliaos/eos5nqn
 Docker Architecture: AMD64
